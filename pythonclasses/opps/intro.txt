@@ -1,0 +1,105 @@
+What’s a Class?
+A class defines attributes (variables) and methods (functions) that describe 
+what an object should have and what it can do.
+
+class Dog:
+    def __init__(self, name, breed):
+        self.name = name  # attribute
+        self.breed = breed
+
+    def bark(self):
+        print(f"{self.name} says woof!")
+
+
+✅ class Dog: — defines a class called Dog.
+✅ def __init__(self, name, breed): — the constructor method that runs when you create a new dog.
+✅ self — a reference to the current object.
+✅ self.name and self.breed — instance variables unique to each dog.
+✅ def bark(self): — a method (function) that lets the dog bark
+
+my_dog = Dog("Buddy", "Golden Retriever")  # create a Dog object
+print(my_dog.name)  # Output: Buddy
+print(my_dog.breed)  # Output: Golden Retriever
+my_dog.bark()  # Output: Buddy says woof!
+
+
+Why Use Classes?
+✅ Organize your code — keep related data and functions together.
+✅ Reuse code easily — create multiple objects from the same class.
+✅ Build powerful programs — classes help with larger, more complex projects
+
+
+What is __init__?
+__init__ is a special method in Python classes. It’s called the 
+constructor because it initializes a new object of that Class
+
+class MyClass:
+    def __init__(self, arg1, arg2):
+        # initialization code
+
+
+Key Points:
+✅ self is the object itself — you always include it as the first parameter.
+✅ Any other parameters (arg1, arg2, etc.) are what you pass when creating a new object.
+✅ __init__ runs automatically when you create an object!
+
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name  # create a 'name' attribute
+        self.age = age    # create an 'age' attribute
+
+student1 = Student("Alice", 20)
+print(student1.name)  # Output: Alice
+print(student1.age)   # Output: 20
+
+
+Creates a new Student object.
+
+Calls __init__ and passes "Alice" and 20 to it.
+
+Inside __init__, self.name = name and self.age = age set the attributes for that object.
+
+Why Use __init__?
+✅ It lets you set default values for your object’s attributes.
+✅ It ensures every object has the right initial state.
+✅ It’s the best way to customize objects when they’re created.
+
+MORE EXAMPLE
+
+class Book:
+    def __init__(self, title, author, pages):
+        self.title = title
+        self.author = author
+        self.pages = pages
+
+    def description(self):
+        print(f"'{self.title}' by {self.author}, {self.pages} pages.")
+
+
+# Create a new Book object
+my_book = Book("Harry Potter", "J.K. Rowling", 500)
+
+# Access attributes
+print(my_book.title)     # Harry Potter
+print(my_book.author)    # J.K. Rowling
+print(my_book.pages)     # 500
+
+# Call a method
+my_book.description()    # 'Harry Potter' by J.K. Rowling, 500 pages.
+
+
+t’s an f-string (formatted string literal)!
+In Python, f-strings are a concise way to embed variables directly into strings.
+
+Here’s the syntax:
+f"some text {variable} more text"
+
+
+EXAMPLEtitle = "Python 101"
+print(f"'{title}' is a beginner's guide.")  # Output: 'Python 101' is a beginner's guide.
+
+
+Why Use f-strings?
+✅ Easier to read and write than old .format() or %-style formatting
+✅ You can embed variables and expressions directly — no more messy string concatenation!

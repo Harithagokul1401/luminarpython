@@ -1,0 +1,7 @@
+lst=[7,3,8,2,6,8]
+n= sum(lst)
+print(n)
+j=len(lst)                                      #olst=[]
+for i in range(0,j):                               #for element in lst:
+    a=n-lst[i]                                      #num=n-element
+    print("output : ",a)                            #olst.append(num)

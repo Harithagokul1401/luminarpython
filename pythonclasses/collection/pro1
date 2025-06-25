@@ -1,0 +1,13 @@
+task=["coffee","jogging","bath","class","assignment","lunch","badminton","dinner","prayer","sleep"]
+ctask=[]
+ictask=[]
+n=len(task)
+for i in range(0,n):
+  ans=input(" did u completed "+task[i]+":")
+  if(ans == "yes"):
+    ctask.append(task[i])
+  else:
+    ictask.append(task[i])
+
+print("your completed task : ",ctask)
+print("your incomplete task : ",ictask)

@@ -1,0 +1,15 @@
+ekm,30
+alp,34
+ktm,33
+ksg,25
+klm,23
+ekm,31
+alp,35
+ktm,34
+ksg,20
+klm,33
+ekm,23
+alp,30
+ktm,31
+ksg,23
+klm,24
